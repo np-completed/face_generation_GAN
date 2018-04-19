@@ -1,0 +1,14 @@
+cd /media/disc/Megasync/
+mkdir tensorflow_GAN_face_generation
+cd tensorflow_GAN_face_generation
+
+## initialize git
+git init
+
+
+git remote add origin https://github.com/prfrl/GAN_face_generation.git
+
+## Add some files to local dir, then:
+git add -A
+git commit -m "Initial Commit"
+git push -u origin --all master
