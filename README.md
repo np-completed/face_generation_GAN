@@ -1,5 +1,9 @@
 ## Face Generation TensorFlow
-##
+
+
+* Keras-gpu   
+* TensorFlow  
+* CUDA
 
 
 ## Conda configuration
