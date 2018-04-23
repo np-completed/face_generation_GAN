@@ -6,7 +6,7 @@ In this project I use generative adversarial networks to generate new images of 
 
 # Software  
 
-# Amazon EC2  
+* Amazon EC2  
 * Anaconda  
 * CUDA  
 * Jupyter notebooks  
