@@ -89,11 +89,11 @@ Create folder for notebooks
 
 `cd Notebooks`  
 
-### Start Jupyter Notebook Server   
-`source activate tensorflow_p36`
-`jupyter notebook`
+### Start Jupyter Notebook Server     
+`source activate tensorflow_p36`   
+`jupyter notebook`    
 
-https://ec2-18-219-93-211.us-east-2.compute.amazonaws.com:8888
+Navigate to [Jupyter Server](https://ec2-18-219-93-211.us-east-2.compute.amazonaws.com:8888) via browser. For this project the url uses the EC2 info, location and port number, e.g. https://ec2-18-219-93-211.us-east-2.compute.amazonaws.com:8888
 
 ## Version Control: Keeping Track of Code Changes
 
