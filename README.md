@@ -58,7 +58,7 @@ Next, open python to generate password (this is the password you will use when y
 `>>> passwd() `   
 `Enter password:  `  
 `Verify password:  `  
-`'sha1:608e15353a43:f2054d495b7992ec518ada4cd76e844d738e58bd'`  
+`'sha1:xxx...xxx'`  
 `quit()`   
 
 
@@ -76,7 +76,7 @@ In a new terminal session open ` nano ~/.jupyter/jupyter_notebook_config.py` . A
 `# c.NotebookApp.open_browser = False `  #so that the ipython notebook does not opens up a browser by default  
 `c.NotebookApp.password = u'sha1:xxx...xxx' ` #the encrypted password we generated above
 
-`## Set the port to 8888, the port we set up in the AWS EC2 set-up  `
+`## Set the port to 8888, the port we set up in the AWS EC2 set-up  `    
 `c.NotebookApp.port = 8888`   
 
 Save and Exit config file
