@@ -34,8 +34,7 @@ I elected to use p2.xlarge AWS EC2 because the GPU setup was simple. My local GP
 It is possible using anaconda by itself (conda install -c anaconda keras_gpu) MAY be simple to use. 
 However my experience using docker locally never satisfied the requirements to use GPU.
 
-[Good Setup Tutorial](https://chrisalbon.com/software_engineering/cloud_computing/run_project_jupyter_on_amazon_ec2/)
-https://chrisalbon.com/software_engineering/cloud_computing/run_project_jupyter_on_amazon_ec2/
+A [Good Setup Tutorial](https://chrisalbon.com/software_engineering/cloud_computing/run_project_jupyter_on_amazon_ec2/) is available showing how to configure TensorFlow-GPU and Jupyter Server.   
 
 First I setup a EC2 instance on AWS using GPU computation. The community box "Deep Learning AMI Ubuntu Version 7.0" comes with latest binaries of deep learning frameworks pre-installed in separate virtual environments: MXNet, TensorFlow, Caffe, Caffe2, PyTorch, Keras, Chainer, Theano and CNTK. Fully-configured with NVidia CUDA, cuDNN and NCCL as well as Intel MKL-DNN. The box has 75 GB of memory. It is easy to ssh in and jump into Jupyter using two commands:  
 
