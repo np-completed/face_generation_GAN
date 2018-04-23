@@ -16,13 +16,15 @@ In this project I use generative adversarial networks to generate new images of 
 
 
 ## Conda configuration
-##
-source activate face_GAN
 
-## Post activated packages installed
-##
-conda install --name face_GAN tqdm
-pip install Image
+My initial model attempts used anaconda locally. Later I switched to AWS EC2 for performance gain.  
+`source activate face_GAN`  
+
+## Packages missing in anaconda environment
+
+These were installed from Jupyter Server:  
+`conda install --name face_GAN tqdm`   
+`pip install Image`  
 
 
 ## Configuring Amazon EC2 instance
@@ -41,7 +43,7 @@ First I setup a EC2 instance on AWS using GPU computation. The community box "De
 `source activate tensorflow_p36`  
 `jupyter notebook`
 
-Before using Jupyter some configuration is required. For Jupyter to be up and running:    
+Before using Jupyter some configuration is required. During instance setup configure East Coast area and port 8888. For Jupyter to be up and running:    
 
 `ssh -i "tf_keras_gpu.pem" ubuntu@ec2-18-219-93-211.us-east-2.compute.amazonaws.com`  
 
