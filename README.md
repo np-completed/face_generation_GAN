@@ -38,8 +38,8 @@ A [Good Setup Tutorial](https://chrisalbon.com/software_engineering/cloud_comput
 
 First I setup a EC2 instance on AWS using GPU computation. The community box "Deep Learning AMI Ubuntu Version 7.0" comes with latest binaries of deep learning frameworks pre-installed in separate virtual environments: MXNet, TensorFlow, Caffe, Caffe2, PyTorch, Keras, Chainer, Theano and CNTK. Fully-configured with NVidia CUDA, cuDNN and NCCL as well as Intel MKL-DNN. The box has 75 GB of memory. It is easy to ssh in and jump into Jupyter using two commands:  
 
-source activate tensorflow_p36
-jupyter notebook
+`source activate tensorflow_p36`  
+`jupyter notebook`
 
 Before using Jupyter some configuration is required. For Jupyter to be up and running:    
 
@@ -62,36 +62,36 @@ Next, open python to generate password (this is the password you will use when y
 `quit()`   
 
 
-In n a new terminal session open ` 	nano ~/.jupyter/jupyter_notebook_config.py` . Add this at the beginning of the document:
+In a new terminal session open ` nano ~/.jupyter/jupyter_notebook_config.py` . Add this at the beginning of the document:
 
 `c = get_config()`  
 
-`# Kernel config`   
+`## Kernel config`   
 `c.IPKernelApp.pylab = 'inline' `   # if you want plotting support always in your notebook
 
-Notebook config  
+`## Notebook config  `  
 `c.NotebookApp.certfile = u'/home/ubuntu/certs/mycert.pem'`   # location of your certificate file
 `c.NotebookApp.ip = '*'`  
 
-` # c.NotebookApp.open_browser = False `  #so that the ipython notebook does not opens up a browser by default  
+`# c.NotebookApp.open_browser = False `  #so that the ipython notebook does not opens up a browser by default  
 `c.NotebookApp.password = u'sha1:xxx...xxx' ` #the encrypted password we generated above
 
-Set the port to 8888, the port we set up in the AWS EC2 set-up  
+`## Set the port to 8888, the port we set up in the AWS EC2 set-up  `
 `c.NotebookApp.port = 8888`   
 
 Save and Exit config file
 
 Create folder for notebooks
 
-cd ~
+`cd ~` 
 
-mkdir Notebooks
+`mkdir Notebooks`  
 
-cd Notebooks
+`cd Notebooks`  
 
 ### Start Jupyter Notebook Server   
-source activate tensorflow_p36
-jupyter notebook
+`source activate tensorflow_p36`
+`jupyter notebook`
 
 https://ec2-18-219-93-211.us-east-2.compute.amazonaws.com:8888
 
