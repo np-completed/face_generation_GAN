@@ -1,0 +1,24 @@
+## Git Config
+##
+
+
+## Create empty (No README) repo on github
+##
+https://github.com/prfrl/face_generation_GAN
+
+
+cd /media/disc/Megasync/
+mkdir tensorflow_GAN_face_generation
+cd tensorflow_GAN_face_generation
+
+echo "# face_generation_GAN" >> README.md
+## initialize git
+git init
+
+git add *  
+git status
+git commit -m "first commit"
+
+git remote add origin https://github.com/prfrl/face_generation_GAN.git
+
+git push -u origin --all master
